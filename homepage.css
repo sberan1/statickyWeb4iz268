@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:first-child{
+    margin-top: 40px;
+}
+
+.card:last-child{
+    margin-bottom: 40px;
+}
+
+.card-content{
+    max-height: 300px;
+}
+
+.more{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.card-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.card-text {
+    width: 60%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.card-text h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+.card-text p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.landingPageImage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(50%);
+}
+
+.landingPageImage {
+    position: relative;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.text-in-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 70%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-in-image p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .text-in-image p{
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .card-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .card{
+        padding: 10px;
+        width: auto;
+    }
+
+    .card-content{
+        max-height: 200px;
+    }
+
+    .card-text h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    .card-text p {
+        font-size: 15px;
+        -webkit-line-clamp: 4;
+    }
+
+}
+
+

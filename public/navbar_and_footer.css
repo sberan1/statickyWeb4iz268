@@ -100,3 +100,10 @@ footer{
 * {
     box-sizing: border-box;
 }
+
+@media only print {
+    nav, footer {
+        display: none;
+    }
+
+}

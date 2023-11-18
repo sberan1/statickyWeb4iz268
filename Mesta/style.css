@@ -34,7 +34,7 @@ body{
 
 .card-image{
     height: 300px;
-    margin: 20px;
+    margin: 20px 20px 20px 30px;
     border-radius: 10px;
 }
 
@@ -53,3 +53,47 @@ body{
     margin: 5px 5px 5px 15px;
     padding: 5px;
 }
+
+.card-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.card-gallery img{
+    height: 275px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-left{
+        align-self: center;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-image{
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .card-gallery img{
+        height: 200px;
+        border-radius: 10px;
+        margin: 20px 10px;
+    }
+}
+
+

@@ -15,6 +15,14 @@ body{
     margin: 0;
     padding: 20px;
 }
+
+.title-text{
+    font-size: 1em;
+    text-align: justify;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -76,4 +84,16 @@ body{
         -webkit-line-clamp: 15;
         -webkit-box-orient: vertical;
     }
+}
+
+@media only print {
+    .card{
+        width: fit-content;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }

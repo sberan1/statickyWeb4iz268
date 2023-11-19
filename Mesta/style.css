@@ -16,6 +16,13 @@ body{
     padding: 20px;
 }
 
+.title-text{
+    font-size: 1em;
+    text-align: justify;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
 .container{
     display: flex;
     flex-direction: column;

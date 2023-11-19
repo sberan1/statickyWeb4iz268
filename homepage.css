@@ -76,10 +76,6 @@ body {
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
-.landingPageImage {
-    width: 100%;
-    overflow: hidden;
-}
 
 .img {
     width: 100%;
@@ -91,11 +87,8 @@ body {
 .landingPageImage {
     position: relative;
     text-align: center;
-}
-
-.img {
     width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 
 .text-in-image{
@@ -158,6 +151,20 @@ h1 {
         -webkit-line-clamp: 4;
     }
 
+}
+
+@media only print{
+    .card{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .text-in-image p{
+        font-size: 10px;
+    }
 }
 
 
